@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>untitled</title>
+</head>
+<body oncontextmenu="return false">
+ <h1 id="red">this is revision of js</h1>
+ <p id="demo"></p>
+ <input type="text" x-webkit-speech/>
+ <input type="file" capture="environment" accept="video/*">
+
+ <script>
+  console.log("hello world")
+ const a = "false";
+  console.log(typeof a)
+  const b = true;
+  console.log(typeof b)
+  const c = 590;
+  console.log(typeof c)
+  function hell(){
+   console.log("cruel world broken heart")
+  }
+  hell()
+  const myFriends = ["manish", "sagar", "hello world"]
+  console.log(myFriends[1])
+ function hello(y, a){
+  let x = a + y;
+  return x;
+ 
+ }
+ let x = hello (30, 60)
+ console.log(x)
+
+ const obj = {
+  name: "manish",
+  address :"biratchowk",
+age : 19,
+  language: "nepali"
+ }
+ let txt = "";
+for(const x in obj){
+ txt += x + ":" + " " + obj[x] + "<br>"
+}
+
+ document.getElementById("demo").innerHTML = txt;
+
+
+ let red = document.getElementById("red");
+ red.addEventListener('mouseover', (e)=>{
+  red.style.color = 'red';
+  console.log('mousein')
+ })
+ red.addEventListener('mouseout', (e)=> {
+  red.style.color = 'black';
+  console.log("mouseout")
+ })
+ red.addEventListener('click', (e)=>{
+  
+
+  
+  // alert(`{x}` + "has clicked over the paragraph")
+  let c = confirm ("are you sure?")
+ 
+  if(c){alert("thank you") }
+  else{
+   alert("vaag laude")
+  }
+ })
+   let manish = () =>{
+    console.log("manish is a good boy")
+   }
+   manish()
+   
+ </script>
+</body>
+</html>
